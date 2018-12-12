@@ -1,5 +1,9 @@
 \usepackage{amsmath}
 \usepackage{soul}
+\usepackage{graphicx}
+% Files Location
+\let\oldinput\input
+\renewcommand{\input}[1]{\oldinput{#1}}
 
 \newcommand{\eq}[1]{\begin{align*}#1\end{align*}}
 \newcommand{\eqn}[1]{\begin{align}#1\end{align}}
@@ -24,7 +28,7 @@
 
 %---------------------------------------------------------
 \newcommand{\tex}[1]{%
-\input{./tex/#1.tex}%
+\input{./#1.tex}%
 }
 %---------------------------------------------------------
 % Begin Matlab Code 
