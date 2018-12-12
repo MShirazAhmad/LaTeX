@@ -1,6 +1,3 @@
-\usepackage{amsmath}
-\usepackage{soul}
-
 \newcommand{\eq}[1]{\begin{align*}#1\end{align*}}
 \newcommand{\eqn}[1]{\begin{align}#1\end{align}}
 \newcommand{\beat}{\begin{eqnarray}}
@@ -10,4 +7,25 @@
 %\mat{Example} \mat[Example] \mat(Example) \mat|Example| \mat*{}
 \newcommand{\mat}{\mqty}
 \newcommand\tab[1][1cm]{\hspace*{#1}}
-\newcommand{\XYZ}[2]{\newcommand{\#1}{#2}}
+
+%---------------------------------------------------------
+\newcommand{\media}[3]{
+\begin{figure}[H]%
+ \centering%
+\includegraphics[width=#2cm]{#1}%
+\captionsetup{labelformat=empty}
+\caption{#3}%
+\end{figure}%
+}
+
+
+%---------------------------------------------------------
+\newcommand{\tex}[1]{%
+\input{./tex/#1.tex}%
+}
+%---------------------------------------------------------
+% Begin Matlab Code 
+\newcommand{\matlab}[1]{\lstinputlisting[style=Matlab-editor,basicstyle=\mlttfamily]{./codes/#1}}
+\newcommand{\mathematica}[1]{\lstinputlisting[language=Mathematica]{./codes/#1}}
+% End Matlab Code
+%---------------------------------------------------------
