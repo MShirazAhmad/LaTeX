@@ -1,0 +1,41 @@
+\renewcommand{\aa}{\mathrm{a}}
+\newcommand{\bb}{\mathrm{b}}
+\renewcommand{\b}{\hat{b}}
+\renewcommand{\a}{\hat{a}}
+\newcommand{\Diss}{\mathcal{D}}
+\renewcommand{\L}[1]{%
+  \ifthenelse{\equal{#1}{1}}{1\rightarrow L}{}
+  \ifthenelse{\equal{#1}{2}}{{L+1}\rightarrow 2L}{}
+    }
+\newcommand{\rh}{\hat{\rho}}
+\renewcommand{\P}{\textbf{P}}
+\renewcommand{\G}{\Gamma}
+\newcommand{\LL}{\mathcal{L}}
+\newcommand{\DD}{\mathcal{D}}
+\renewcommand{\K}{\kappa}
+\renewcommand{\O}{\textbf{O}}
+\newcommand{\Om}{\Omega}
+\newcommand{\AL}[1]{%
+    \ifthenelse{\equal{#1}{1}}{\aa_{1\rightarrow L}}{}
+    \ifthenelse{\equal{#1}{2}}{\aa_{{L+1}\rightarrow 2L}}{}
+    }
+\renewcommand{\S}{\hat{S}}
+\newcommand{\BL}[1]{%
+    \ifthenelse{\equal{#1}{1}}{\bb_{1\rightarrow L}}{}
+    \ifthenelse{\equal{#1}{2}}{\bb_{{L+1}\rightarrow 2L}}{}
+    }
+\newcommand{\TW}{\Tilde{W}}  
+\newcommand{\WW}{W}
+\newcommand{\MM}{M}
+\begin{gather*}
+\mathcal{L}\\
+\mathrm{a}_{1\rightarrow L} \rightarrow \AL{1}\\
+\mathrm{a}_{{L+1}\rightarrow 2L} \rightarrow \AL{2}\\
+M\rightarrow \MM \\
+\mathrm{b}_{1\rightarrow L} \rightarrow \BL{1}\\
+\mathrm{b}_{{L+1}\rightarrow 2L} \rightarrow \BL{2}\\
+\end{gather*}
+
+
+ %   \ifthenelse{\equal{#1}{1}}{{1\rightarrow L}}{%
+ %   \ifthenelse{\equal{#1}{2}}{{{L+1}\rightarrow 2L}}{}}
